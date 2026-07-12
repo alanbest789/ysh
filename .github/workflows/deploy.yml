@@ -12,10 +12,11 @@ jobs:
         with:
           node-version: 20
           cache: npm
-      - run: npm install
-      - run: npm run build
+      - run: npm ci
+      - run: npm run build:ghpages
       - name: Deploy static files
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
           publish_dir: ./dist
