@@ -5,10 +5,12 @@ node_modules/
 # Production builds
 dist/
 */dist/
-!dist/
-!dist/**
 build/
 */build/
+
+# Keep built production output if needed
+!dist/
+!dist/**
 
 # Environment files
 .env.local
