@@ -8,11 +8,11 @@ export interface ISample {
   thumbnailUrl: string
 }
 
-const SAMPLE_1 = '/spark/app/app_179qegwsz7p/runtime/api/v1/storage/object/bucket_aadkjxl4rz2du_static/static%2Faadkjxl5hhafs_ve_miaoda'
-const SAMPLE_2 = '/spark/app/app_179qegwsz7p/runtime/api/v1/storage/object/bucket_aadkjxl4rz2du_static/static%2Faadkjxeqopmgw_ve_miaoda'
-const SAMPLE_3 = '/spark/app/app_179qegwsz7p/runtime/api/v1/storage/object/bucket_aadkjxl4rz2du_static/static%2Faadkjxdkepwbu_ve_miaoda'
-const SAMPLE_4 = '/spark/app/app_179qegwsz7p/runtime/api/v1/storage/object/bucket_aadkjxl4rz2du_static/static%2Faadkjxcktv2fw_ve_miaoda'
-const SAMPLE_5 = '/spark/app/app_179qegwsz7p/runtime/api/v1/storage/object/bucket_aadkjxl4rz2du_static/static%2Faadkjxbvsschu_ve_miaoda'
+const SAMPLE_1 = new URL('../assets/videos/文旅商业片.png', import.meta.url).href
+const SAMPLE_2 = new URL('../assets/videos/AIGC仿真人剧.png', import.meta.url).href
+const SAMPLE_3 = new URL('../assets/videos/3D漫剧.png', import.meta.url).href
+const SAMPLE_4 = new URL('../assets/videos/2D漫剧.png', import.meta.url).href
+const SAMPLE_5 = new URL('../assets/videos/海外仿真人剧.png', import.meta.url).href
 
 
 export const MOCK_SAMPLES: ISample[] = [

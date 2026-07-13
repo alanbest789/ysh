@@ -55,14 +55,14 @@ function killOrphansByPort(port) {
 
 const managed = [];
 
-function startProcess({ name, command, args, logFileName }) {
+function startProcess({ name, command, args, logFileName, shell = false }) {
   const logFd = logFileName
     ? fs.openSync(path.join(LOG_DIR, logFileName), 'a')
     : null;
 
   const child = spawn(command, args, {
     stdio: ['ignore', 'pipe', 'pipe'],
-    shell: false,
+    shell,
     cwd: ROOT,
     env: process.env,
     detached: true,
@@ -85,12 +85,26 @@ function startProcess({ name, command, args, logFileName }) {
   return child;
 }
 
+const viteScriptPath = path.resolve(ROOT, 'node_modules', 'vite', 'bin', 'vite.js');
+const useNpmExec = !fs.existsSync(viteScriptPath);
+let clientCommand;
+let clientArgs;
+
+if (!useNpmExec) {
+  clientCommand = process.execPath;
+  clientArgs = [viteScriptPath, '--port', CLIENT_DEV_PORT, '--host', '0.0.0.0'];
+} else {
+  clientCommand = 'npm';
+  clientArgs = ['exec', 'vite', '--', '--port', CLIENT_DEV_PORT, '--host', '0.0.0.0'];
+}
+
+log(`starting client: ${clientCommand} ${clientArgs.map((a) => a.includes(' ') ? `"${a}"` : a).join(' ')}`);
 killOrphansByPort(CLIENT_DEV_PORT);
 
 startProcess({
   name: 'client',
-  command: 'npx',
-  args: ['vite', '--port', CLIENT_DEV_PORT, '--host', '0.0.0.0'],
+  command: clientCommand,
+  args: clientArgs,
   logFileName: 'client.std.log',
 });
 

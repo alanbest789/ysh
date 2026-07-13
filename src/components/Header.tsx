@@ -58,14 +58,12 @@ export default function Header() {
             to="#hero"
             className="flex items-center gap-3 group shrink-0"
           >
-            <div className="relative size-10 md:size-12 rounded-full bg-gradient-to-br from-amber-400 via-yellow-500 to-amber-600 flex items-center justify-center shadow-lg shadow-amber-500/30 group-hover:shadow-amber-500/50 transition-shadow overflow-hidden">
+            <div className="relative w-20 h-20 md:w-24 md:h-24 flex items-center justify-center overflow-hidden">
               <img
                 src={LOGO_SRC}
                 alt="迎胜汇"
-                className="h-8 w-8 md:h-9 md:w-9 object-contain"
+                className="h-18 w-18 md:h-20 md:w-20 object-contain"
               />
-              {/* 龙纹装饰 */}
-              <div className="absolute -inset-1 rounded-full border border-amber-400/30 animate-pulse" />
             </div>
             <div className="flex flex-col leading-tight">
               <span

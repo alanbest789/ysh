@@ -9,6 +9,7 @@ const QUICK_LINKS = [
   { label: '教育培训', href: '#education' },
   { label: '代表作品', href: '#works' },
   { label: '样片展示', href: '#samples' },
+  { label: '关于我们', href: '#about' },
 ]
 
 export default function Footer() {
@@ -22,11 +23,11 @@ export default function Footer() {
           {/* 品牌栏 */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <div className="relative size-10 rounded-full bg-gradient-to-br from-amber-400 via-yellow-500 to-amber-600 flex items-center justify-center shadow-lg shadow-amber-500/20 overflow-hidden">
+              <div className="relative w-16 h-16 md:w-20 md:h-20 flex items-center justify-center overflow-hidden">
                 <img
                   src={LOGO_SRC}
                   alt="迎胜汇"
-                  className="h-8 w-8 object-contain"
+                  className="h-14 w-14 md:h-18 md:w-18 object-contain"
                 />
               </div>
               <div>
@@ -48,7 +49,7 @@ export default function Footer() {
             <h3 className="text-amber-400 font-medium text-base mb-5 tracking-wide">
               快速链接
             </h3>
-            <ul className="space-y-3">
+            <ul className="grid grid-cols-2 gap-3">
               {QUICK_LINKS.map((link) => (
                 <li key={link.href}>
                   <NavLink
@@ -81,8 +82,8 @@ export default function Footer() {
         </div>
 
         {/* 版权信息 */}
-        <div className="mt-12 pt-8 border-t border-amber-500/10 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-amber-100/40">
+        <div className="mt-12 pt-8 border-t border-amber-500/10 flex flex-col items-center justify-center gap-4">
+          <p className="text-xs text-amber-100/40 text-center">
             © 2026 迎胜汇 YINGSHENGHUI. All Rights Reserved.
           </p>
         </div>
