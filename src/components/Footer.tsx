@@ -1,6 +1,8 @@
 import { NavLink } from '@lark-apaas/client-toolkit-lite'
 import { Mail, MapPin } from 'lucide-react'
 
+const LOGO_SRC = import.meta.env.BASE_URL + 'logo.png'
+
 const QUICK_LINKS = [
   { label: '剧本开发', href: '#script' },
   { label: '影视制作', href: '#production' },
@@ -22,7 +24,7 @@ export default function Footer() {
             <div className="flex items-center gap-3">
               <div className="relative size-10 rounded-full bg-gradient-to-br from-amber-400 via-yellow-500 to-amber-600 flex items-center justify-center shadow-lg shadow-amber-500/20 overflow-hidden">
                 <img
-                  src="/迎胜汇logo.png"
+                  src={LOGO_SRC}
                   alt="迎胜汇"
                   className="h-8 w-8 object-contain"
                 />

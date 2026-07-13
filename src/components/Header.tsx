@@ -5,6 +5,8 @@ import { cn } from '@/lib/utils'
 import { useIsMobile } from '@/hooks/use-mobile'
 import { UniversalLink } from '@lark-apaas/client-toolkit-lite';
 
+const LOGO_SRC = import.meta.env.BASE_URL + 'logo.png'
+
 const NAV_ITEMS = [
   { label: '首页', href: '#hero' },
   { label: '剧本开发', href: '#script' },
@@ -58,7 +60,7 @@ export default function Header() {
           >
             <div className="relative size-10 md:size-12 rounded-full bg-gradient-to-br from-amber-400 via-yellow-500 to-amber-600 flex items-center justify-center shadow-lg shadow-amber-500/30 group-hover:shadow-amber-500/50 transition-shadow overflow-hidden">
               <img
-                src="/迎胜汇logo.png"
+                src={LOGO_SRC}
                 alt="迎胜汇"
                 className="h-8 w-8 md:h-9 md:w-9 object-contain"
               />

@@ -13,7 +13,6 @@ const SAMPLE_2 = '/spark/app/app_179qegwsz7p/runtime/api/v1/storage/object/bucke
 const SAMPLE_3 = '/spark/app/app_179qegwsz7p/runtime/api/v1/storage/object/bucket_aadkjxl4rz2du_static/static%2Faadkjxdkepwbu_ve_miaoda'
 const SAMPLE_4 = '/spark/app/app_179qegwsz7p/runtime/api/v1/storage/object/bucket_aadkjxl4rz2du_static/static%2Faadkjxcktv2fw_ve_miaoda'
 const SAMPLE_5 = '/spark/app/app_179qegwsz7p/runtime/api/v1/storage/object/bucket_aadkjxl4rz2du_static/static%2Faadkjxbvsschu_ve_miaoda'
-const SAMPLE_6 = '/assets/images/'
 
 
 export const MOCK_SAMPLES: ISample[] = [
