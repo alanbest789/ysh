@@ -6,7 +6,7 @@ const QUICK_LINKS = [
   { label: '影视制作', href: '#production' },
   { label: '教育培训', href: '#education' },
   { label: '代表作品', href: '#works' },
-  { label: '关于我们', href: '#about' },
+  { label: '样片展示', href: '#samples' },
 ]
 
 export default function Footer() {
@@ -33,7 +33,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-sm leading-relaxed text-amber-100/50 max-w-xs">
-              以匠心铸就精品，以故事传递价值。迎胜汇致力于打造具有东方美学与全球视野的影视内容。
+              以匠心铸就精品，以故事传递价值。迎胜汇致力于打造具有行业领先与全球视野的影视内容。
             </p>
           </div>
 
@@ -67,14 +67,7 @@ export default function Footer() {
                 <Mail className="size-4 text-amber-500/70 mt-0.5 shrink-0" />
                 <div className="text-sm">
                   <div className="text-amber-100/70">商务合作邮箱</div>
-                  <div className="text-amber-300/80">business@yingshenghui.com</div>
-                </div>
-              </li>
-              <li className="flex items-start gap-3">
-                <MapPin className="size-4 text-amber-500/70 mt-0.5 shrink-0" />
-                <div className="text-sm">
-                  <div className="text-amber-100/70">总部地址</div>
-                  <div className="text-amber-300/80">重庆市渝中区解放碑商圈</div>
+                  <div className="text-amber-300/80">yingshenghuivip@gmail.com</div>
                 </div>
               </li>
             </ul>
@@ -85,9 +78,6 @@ export default function Footer() {
         <div className="mt-12 pt-8 border-t border-amber-500/10 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-amber-100/40">
             © 2026 迎胜汇 YINGSHENGHUI. All Rights Reserved.
-          </p>
-          <p className="text-xs text-amber-100/30">
-            专注精品内容创作 · 传递东方文化价值
           </p>
         </div>
       </div>

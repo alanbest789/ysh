@@ -99,7 +99,7 @@ export default function HeroSection() {
           <div className="flex items-center justify-center gap-4">
             <div className="w-16 md:w-24 h-px bg-gradient-to-r from-transparent to-amber-500/60" />
             <span className="text-amber-400/80 text-xs md:text-sm tracking-[0.3em] uppercase">
-              东方故事 · 世界表达
+              笔写风云 · 影绘万象
             </span>
             <div className="w-16 md:w-24 h-px bg-gradient-to-l from-transparent to-amber-500/60" />
           </div>
@@ -113,13 +113,13 @@ export default function HeroSection() {
 
           {/* 副标题 */}
           <p className="text-amber-200/90 text-lg md:text-xl lg:text-2xl tracking-[0.3em] font-light">
-            YINGSHENGHUI PICTURES
+            YINGSHENGHUI MEDIA
           </p>
 
           {/* Slogan */}
           <div className="pt-4 md:pt-6">
             <p className="text-amber-100/80 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
-              以匠心铸就精品剧作&nbsp;&nbsp;以光影传递东方美学
+              以匠心铸就精品剧作&nbsp;&nbsp;以光影锻造视觉盛宴
             </p>
             <p className="text-amber-200/60 text-sm md:text-base mt-2 tracking-widest">
               剧本开发 · 影视制作 · 教育培训

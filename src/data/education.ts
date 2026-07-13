@@ -35,23 +35,23 @@ export const MOCK_EDUCATION: IEducation[] = [
     ],
     stats: [
       {
-        label: '培训期数',
-        value: 36,
-        unit: '期'
+        label: '合作院校',
+        value: 20,
+        unit: '+家'
       },
       {
         label: '学员人数',
         value: 1200,
-        unit: '人'
+        unit: '+人'
       },
       {
         label: '孵化作品',
-        value: 86,
-        unit: '部'
+        value: 500,
+        unit: '+部'
       },
       {
-        label: '就业率',
-        value: 78,
+        label: '交付率',
+        value: 90,
         unit: '%'
       }
     ]
