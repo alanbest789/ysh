@@ -20,8 +20,12 @@ export default function Footer() {
           {/* 品牌栏 */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <div className="relative size-10 rounded-full bg-gradient-to-br from-amber-400 via-yellow-500 to-amber-600 flex items-center justify-center shadow-lg shadow-amber-500/20">
-                <span className="text-[#1a0505] font-bold text-lg font-serif">迎</span>
+              <div className="relative size-10 rounded-full bg-gradient-to-br from-amber-400 via-yellow-500 to-amber-600 flex items-center justify-center shadow-lg shadow-amber-500/20 overflow-hidden">
+                <img
+                  src="/迎胜汇logo.png"
+                  alt="迎胜汇"
+                  className="h-8 w-8 object-contain"
+                />
               </div>
               <div>
                 <div className="text-amber-400 font-serif font-bold text-lg tracking-wider">

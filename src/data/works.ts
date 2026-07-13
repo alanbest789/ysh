@@ -8,13 +8,16 @@ export interface IWork {
   imageUrl: string
 }
 
-const POSTER_1 = '/spark/app/app_179qegwsz7p/runtime/api/v1/storage/object/bucket_aadkjxl4rz2du_static/static%2Faadkjxddln6ds_ve_miaoda'
-const POSTER_2 = '/spark/app/app_179qegwsz7p/runtime/api/v1/storage/object/bucket_aadkjxl4rz2du_static/static%2Faadkjxdkepwau_ve_miaoda'
-const POSTER_3 = '/spark/app/app_179qegwsz7p/runtime/api/v1/storage/object/bucket_aadkjxl4rz2du_static/static%2Faadkjw4fvzmps_ve_miaoda'
-const POSTER_4 = '/spark/app/app_179qegwsz7p/runtime/api/v1/storage/object/bucket_aadkjxl4rz2du_static/static%2Faadkjxdax3eds_ve_miaoda'
-const POSTER_5 = '/spark/app/app_179qegwsz7p/runtime/api/v1/storage/object/bucket_aadkjxl4rz2du_static/static%2Faadkjxbvsscfu_ve_miaoda'
-const POSTER_6 = '/spark/app/app_179qegwsz7p/runtime/api/v1/storage/object/bucket_aadkjxl4rz2du_static/static%2Faadkjxcynoqgs_ve_miaoda'
-const POSTER_7 = '/spark/app/app_179qegwsz7p/runtime/api/v1/storage/object/bucket_aadkjxl4rz2du_static/static%2Faadkjxeavuypu_ve_miaoda'
+const POSTER_1 = new URL('../assets/images/黑色曼陀罗.png', import.meta.url).href
+const POSTER_2 = new URL('../assets/images/千金烬燃.png', import.meta.url).href
+const POSTER_3 = new URL('../assets/images/重生只为你之爱可否重来.png', import.meta.url).href
+const POSTER_4 = new URL('../assets/images/嘿！黑不拉几先生.jpg', import.meta.url).href
+const POSTER_5 = new URL('../assets/images/大山绝地行善被拐的美妇.jpg', import.meta.url).href
+const POSTER_6 = new URL('../assets/images/我单开饭店后.png', import.meta.url).href
+const POSTER_7 = new URL('../assets/images/林小满的翻盘人生.jpg', import.meta.url).href
+const POSTER_8 = new URL('../assets/images/陛下，皇后娘娘是HR.jpg', import.meta.url).href
+const POSTER_9 = new URL('../assets/images/侯门嫡女要反击.png', import.meta.url).href
+const POSTER_10 = new URL('../assets/images/公主带民一起飞.png', import.meta.url).href
 
 export const MOCK_WORKS_TOP: IWork[] = [
   {
@@ -74,21 +77,21 @@ export const MOCK_WORKS_BOTTOM: IWork[] = [
     title: '末日觉醒',
     tags: ['科幻', '末世', '男频'],
     description: '末日降临，异能觉醒，谁能主宰沉浮。',
-    imageUrl: POSTER_4,
+    imageUrl: POSTER_8,
   },
   {
     id: 'bot-2',
     title: '嫡女谋',
     tags: ['宅斗', '权谋', '女频'],
     description: '侯府嫡女，步步为营，谋得一世安稳。',
-    imageUrl: POSTER_5,
+    imageUrl: POSTER_9,
   },
   {
     id: 'bot-3',
     title: '神级系统',
     tags: ['系统', '升级', '男频'],
     description: '意外获得神级系统，从此人生开挂。',
-    imageUrl: POSTER_6,
+    imageUrl: POSTER_10,
   },
   {
     id: 'bot-4',
