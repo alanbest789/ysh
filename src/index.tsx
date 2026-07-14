@@ -2,14 +2,14 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import { ErrorBoundary } from "react-error-boundary";
-import { AppContainer, ErrorRender } from "@lark-apaas/client-toolkit-lite";
+import { ErrorRender, QueryProvider } from "@lark-apaas/client-toolkit-lite";
 import App from "./app";
 import "./index.css";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter basename={import.meta.env.BASE_URL}>
-      <AppContainer>
+      <QueryProvider>
         <ErrorBoundary
           fallbackRender={({ error, resetErrorBoundary }) => (
             <ErrorRender error={error} resetErrorBoundary={resetErrorBoundary} />
@@ -17,7 +17,7 @@ createRoot(document.getElementById("root")!).render(
         >
           <App />
         </ErrorBoundary>
-      </AppContainer>
+      </QueryProvider>
     </BrowserRouter>
   </StrictMode>,
 );
