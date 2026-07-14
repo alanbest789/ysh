@@ -15,7 +15,7 @@ const POSTER_4 = new URL('../assets/images/侯门嫡女要反击.jpg', import.me
 const POSTER_5 = new URL('../assets/images/重生只为你之爱可否重来.jpg', import.meta.url).href
 
 const POSTER_6 = new URL('../assets/images/嘿！黑不拉几先生.jpg', import.meta.url).href
-const POSTER_7 = new URL('../assets/images/我单开饭店后.png', import.meta.url).href
+const POSTER_7 = new URL('../assets/images/我单开饭店后.jpg', import.meta.url).href
 const POSTER_8 = new URL('../assets/images/林小满的翻盘人生.jpg', import.meta.url).href
 const POSTER_9 = new URL('../assets/images/陛下，皇后娘娘是HR.jpg', import.meta.url).href
 const POSTER_10 = new URL('../assets/images/公主带民一起飞.jpg', import.meta.url).href
