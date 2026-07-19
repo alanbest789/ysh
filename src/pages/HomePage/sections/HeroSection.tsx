@@ -2,7 +2,7 @@ import { ChevronDown } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { UniversalLink } from '@lark-apaas/client-toolkit-lite';
 
-const HERO_BG = 'https://aka.doubaocdn.com/s/Cbop1wjraq'
+const HERO_BG = '/官网背景.jpg'
 
 export default function HeroSection() {
   const scrollToNext = () => {
